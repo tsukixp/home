@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsuki</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="preloader"><div class="loader"></div></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <header>
+        <nav>
+            <div class="logo">TSUKI</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#schedule">Programação</a></li>
+                <li><a href="#rules">Regras</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#commands">Comandos</a></li>
+                <li><a href="#socials">Redes Sociais</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="images/op.gif" alt="Personagem Tsuki" class="character-img">
+                <h1>Bem-vindo ao universo de <span class="highlight">Tsuki</span>!</h1>
+                <p>Onde a diversão e a criatividade não têm limites. Junte-se a nós nas lives!</p>
+                <div class="hero-buttons">
+                    <a href="https://www.twitch.tv/tsuki_xp" target="_blank" class="btn btn-primary">Assista na Twitch</a>
+                    <a href="https://www.youtube.com/@tsuki_xp" target="_blank" class="btn btn-secondary">Veja no YouTube</a>
+                </div>
+            </div>
+            <div class="wave-container">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(159,95,222,0.7)" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(159,95,222,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(159,95,222,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#9f5fde" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <section id="schedule" class="content-section">
+            <h2 class="section-title">Programação das Lives</h2>
+            <div class="schedule-container">
+                <div class="schedule-day" data-tilt><h3>Segunda-feira</h3><p>20:30 - 00:30<br>Noite de Terror</p></div>
+                <div class="schedule-day" data-tilt><h3>Terça-feira</h3><p>22:30 - 01:30<br>Jogos Variados</p></div>
+                <div class="schedule-day" data-tilt><h3>Quarta-feira</h3><p>20:30 - 00:30<br>Arte e Bate-papo</p></div>
+                <div class="schedule-day" data-tilt><h3>Quinta-feira</h3><p>22:30 - 01:30<br>TBT dos Games</p></div>
+                <div class="schedule-day" data-tilt><h3>Sexta-feira</h3><p>20:30 - 00:30<br>Sextou com a Galera</p></div>
+                <div class="schedule-day" data-tilt><h3>Sábado</h3><p>15:30 - 00:30<br>Maratona de Sábado</p></div>
+                <div class="schedule-day" data-tilt><h3>Domingo</h3><p>15:30 - 00:30<br>Domingo de Relax</p></div>
+            </div>
+        </section>
+
+        <section id="rules" class="content-section">
+            <h2 class="section-title">Regras da Comunidade</h2>
+            <div class="book-container">
+                <button id="prev-btn" class="book-nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <div id="book" class="book">
+                    <div id="p1" class="paper">
+                        <div class="front"><div id="f1" class="front-content"><div class="book-cover-border"><h2>Livro de Regras</h2><span>da comunidade de Tsuki</span></div></div></div>
+                        <div class="back"><div id="b1" class="back-content"><h3>Essenciais</h3><ul class="rules-list-book"><li><i class="fa-solid fa-check-circle"></i> Respeite a todos no chat, sem exceções.</li><li><i class="fa-solid fa-check-circle"></i> Divirta-se e interaja positivamente.</li></ul></div></div>
+                    </div>
+                    <div id="p2" class="paper">
+                        <div class="front"><div id="f2" class="front-content"><h3>Proibições</h3><ul class="rules-list-book"><li><i class="fa-solid fa-times-circle"></i> Sem spam, autopromoção ou links.</li><li><i class="fa-solid fa-times-circle"></i> Não use CAPS LOCK excessivamente.</li></ul></div></div>
+                        <div class="back"><div id="b2" class="back-content"><h3>Importante</h3><ul class="rules-list-book"><li><i class="fa-solid fa-times-circle"></i> Evite spoilers de qualquer tipo.</li><li><i class="fa-solid fa-check-circle"></i> Mantenha o papo leve e amigável!</li></ul></div></div>
+                    </div>
+                    <div id="p3" class="paper">
+                        <div class="front"><div id="f3" class="front-content"><h2>Fim</h2><p>Obrigado por ler e fazer parte da nossa comunidade!</p></div></div>
+                        <div class="back"><div id="b3" class="back-content"></div></div>
+                    </div>
+                </div>
+                <button id="next-btn" class="book-nav-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+        <section id="gallery" class="content-section">
+            <h2 class="section-title">Minhas Artes</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/art1.jpg" alt="Arte 1"></div>
+                <div class="gallery-item"><img src="images/art2.jpg" alt="Arte 2"></div>
+                <div class="gallery-item"><img src="images/art3.jpg" alt="Arte 3"></div>
+                <div class="gallery-item"><img src="images/art4.jpg" alt="Arte 4"></div>
+                <div class="gallery-item"><img src="images/art5.jpg" alt="Arte 5"></div>
+                <div class="gallery-item"><img src="images/art6.jpg" alt="Arte 6"></div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO DE COMANDOS ATUALIZADA -->
+        <section id="commands" class="content-section">
+            <h2 class="section-title">Comandos do Chat</h2>
+            <div class="commands-container">
+                <div class="command-card" data-tilt>
+                    <h3>Painel de Comandos</h3>
+                    <ul>
+                        <li><div><span class="command-name">!pix</span> - Apoie o canal.</div><button class="copy-btn" data-command="!pix"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!youtube</span> - Link para o canal do YouTube.</div><button class="copy-btn" data-command="!youtube"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!comandos</span> - Exibe a lista de comandos.</div><button class="copy-btn" data-command="!comandos"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!uptime</span> - Tempo que a live está no ar.</div><button class="copy-btn" data-command="!uptime"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!avatar</span> - Informações sobre os avatares.</div><button class="copy-btn" data-command="!avatar"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">/clip</span> - Crie um clipe da live.</div><button class="copy-btn" data-command="/clip"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!setup</span> - Mostra a configuração do PC.</div><button class="copy-btn" data-command="!setup"><i class="fa-solid fa-copy"></i></button></li>
+                    </ul>
+                </div>
+                <div class="command-card" data-tilt>
+                    <h3>Stream Avatars</h3>
+                    <ul>
+                        <li><div><span class="command-name">!abraço</span> - Abrace outro usuário.</div><button class="copy-btn" data-command="!abraço"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!peidar</span> - Seu avatar solta um pum.</div><button class="copy-btn" data-command="!peidar"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!dança</span> - Seu avatar dança.</div><button class="copy-btn" data-command="!dança"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!ataque</span> - Seu avatar ataca.</div><button class="copy-btn" data-command="!ataque"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!ficar</span> - Seu avatar fica em pé.</div><button class="copy-btn" data-command="!ficar"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!sentar</span> - Seu avatar senta.</div><button class="copy-btn" data-command="!sentar"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!pular</span> - Seu avatar pula.</div><button class="copy-btn" data-command="!pular"><i class="fa-solid fa-copy"></i></button></li>
+                        <li><div><span class="command-name">!presente</span> - Dê um presente a alguém.</div><button class="copy-btn" data-command="!presente"><i class="fa-solid fa-copy"></i></button></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="socials" class="content-section">
+             <h2 class="section-title">Me Siga!</h2>
+             <div class="social-icons">
+                 <a href="https://www.twitch.tv/tsuki_xp" target="_blank" class="social-icon"><i class="fa-brands fa-twitch"></i></a>
+                 <a href="https://www.youtube.com/@tsuki_xp" target="_blank" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                 <a href="https://x.com/httpablo_art" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-discord"></i></a>
+             </div>
+        </section>
+        
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+        
+    </main>
+    <footer><p>&copy; 2025 Tsuki. Todos os direitos reservados.</p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
